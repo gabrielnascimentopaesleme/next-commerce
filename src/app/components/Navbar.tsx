@@ -1,4 +1,11 @@
 import Link from 'next/link';
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from '@clerk/nextjs';
 
 const Navbar = () => {
   return (
@@ -9,6 +16,14 @@ const Navbar = () => {
       >
         Next Commerce
       </Link>
+      <SignedOut>
+        <SignInButton mode='modal'>
+          <button className='border rounded-md py-1.5 px-3'>Fazer login</button>
+        </SignInButton>
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </nav>
   );
 };

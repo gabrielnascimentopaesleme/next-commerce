@@ -17,8 +17,8 @@ const Navbar = () => {
         Next Commerce
       </Link>
       <SignedOut>
-        <SignInButton mode='modal'>
-          <button className='border rounded-md py-1.5 px-3'>Fazer login</button>
+        <SignInButton mode="modal">
+          <button className="border rounded-md py-1.5 px-3">Fazer login</button>
         </SignInButton>
       </SignedOut>
       <SignedIn>
